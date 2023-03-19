@@ -41,7 +41,7 @@ public class Weather extends JFrame {
     public String getWeather() {
         HttpRequest request = HttpRequest.newBuilder()
         // TODO sa generez vremea in functie de oras
-				.uri(URI.create("http://api.weatherapi.com/v1/current.json?key=897f96fdadc34d1a8d3231119231503&q=Cluj-Napoca&aqi=no"))
+				.uri(URI.create("//API for the weather"))
                 .method("GET", HttpRequest.BodyPublishers.noBody())
 				.build();
         HttpResponse<String> response = null;
