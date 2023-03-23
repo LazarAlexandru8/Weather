@@ -5,7 +5,8 @@ import org.json.JSONObject;
 public class Main {
     public static void main(String[] args) {
         Weather obj = new Weather();
-        JSONObject jsonObj = new JSONObject(obj.getWeather());
+        String city = "Cluj-Napoca";
+        JSONObject jsonObj = new JSONObject(obj.getWeather(city));
         Float temp = jsonObj.getJSONObject("current").getFloat("temp_c");
         String temperatura = temp.toString();
         String zona = jsonObj.getJSONObject("location").getString("name");
